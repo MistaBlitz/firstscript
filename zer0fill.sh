@@ -17,7 +17,7 @@ then
 	# setting whoami variable to user running script
 	whoami=$(whoami)
 	# writing information to log file
-	echo "Name: $whoami Date: $date Drive: $drivenum" >> /var/log/zer0fill/drivelog.txt
+	#echo "Name: $whoami Date: $date Drive: $drivenum" >> /var/log/zer0fill/drivelog.txt
 	# run command to zero fill drive selected
 	sudo dd if=/dev/zero if=/dev/$drivenum bs=1M > /dev/null
 # if user doesn't respond with y or n script ends
